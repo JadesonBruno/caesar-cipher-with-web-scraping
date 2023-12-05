@@ -17,7 +17,7 @@ In the example in the image, considering that we had a collection of characters 
 
 The Caesar Cipher is a historical example of cryptography that still has relevance today. However, it is important to emphasize that its use, in isolation, would not be effective, given the current information security scenario.
 
-This project was a prerequisite for approval in the “Programming Logic I” module of the “Vem Ser Tech Course - Data powered [Ifood](https://www.ifood.com.br/) | Data Analystic” from the educational institution [Ada Tech](https://ada.tech/).
+This project was a prerequisite for approval in the “Programming Logic I” module of the “Vem Ser Tech Course - Data powered by [Ifood](https://www.ifood.com.br/) | Data Analystic” from the educational institution [Ada Tech](https://ada.tech/).
 
 ## Objectives
 
