@@ -105,14 +105,9 @@ Here is the detailed explanation of the scraping part:
       return secret_word
 ```
 
-## Project Flowchart
-
-![Project Flowchart](https://github.com/JadesonBruno/caesar_cipher_with_web_scraping/blob/main/assets/project_flowchart.png)
-
 ## Technologies Used
 
 - Python 3.10.9
-- Lucidchart
 
 ## How to execute the project
 

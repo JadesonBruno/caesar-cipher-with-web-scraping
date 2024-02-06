@@ -55,20 +55,33 @@ def main():
     while True:
         option = get_user_input()
 
-        if option == 1 or option == 2:
-            message = input(f"Enter the message to be {'encrypted' if option == 1 else 'decrypted'}: ")
-            result = caesar_cipher(message, key, option - 1, alphabet)
-            print(f"{'Encrypted' if option == 1 else 'Decrypted'} message: {result}")
-            print(f"The key used was: {key}\n\n")
+        if option == 1:
+            message = input(f'Enter the message to be encrypted: ')
+            result = caesar_cipher(message, key, ENCRYPT, alphabet)
+            print(f'Encrypted message: {result}')
+            print(f'The key used was: {key}\n\n')
 
-        elif option == 3 or option == 4:
-            manual_key = input(f"Enter the key to {'encrypt' if option == 3 else 'decrypt'}: ")
-            message = input(f"Enter the message to be {'encrypted' if option == 3 else 'decrypted'}: ")
-            result = caesar_cipher(message, manual_key, option - 3, alphabet)
-            print(f"{'Encrypted' if option == 3 else 'Decrypted'} message: {result}")
-            print(f"The key used was: {manual_key}\n\n")
+        elif option == 2:
+            message = input(f'Enter the message to be decrypted: ')
+            result = caesar_cipher(message, key, DECRYPT, alphabet)
+            print(f'Decrypted message: {result}')
+            print(f'The key used was: {key}\n\n')
 
-        elif option == 5:
+        elif option == 3:
+            manual_key = input(f'Enter the key to encrypt: ')
+            message = input(f'Enter the message to be encrypted: ')
+            result = caesar_cipher(message, manual_key, ENCRYPT, alphabet)
+            print(f'Encrypted message: {result}')
+            print(f'The key used was: {manual_key}\n\n')
+
+        elif option == 4:
+            manual_key = input(f'Enter the key to decrypt: ')
+            message = input(f'Enter the message to be decrypted: ')
+            result = caesar_cipher(message, manual_key, DECRYPT, alphabet)
+            print(f'Decrypted message: {result}')
+            print(f'The key used was: {manual_key}\n\n')
+
+        else:
             print("Program terminated!\n\n")
             break
 
